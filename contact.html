@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Shushant Sourav</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="bracket">&lt;</span>Shushant<span class="tag">.dev</span><span class="bracket">/&gt;</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">contact.send()</p>
+    <h1>Let's build something together</h1>
+    <p>Have an idea, an opportunity, or just want to say hi? Reach out below.</p>
+  </div>
+</section>
+
+<section class="contact-main tight">
+  <div class="container contact-grid">
+
+    <div class="contact-info reveal">
+      <a class="contact-card" href="mailto:sushantprp@gmail.com">
+        <i class="fa-regular fa-envelope"></i>
+        <div>
+          <h3>Email</h3>
+          <p>sushantprp@gmail.com</p>
+        </div>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/shushant-sourav-329259385/" target="_blank" rel="noopener">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <div>
+          <h3>LinkedIn</h3>
+          <p>/in/shushant-sourav</p>
+        </div>
+      </a>
+      <div class="contact-card no-hover">
+        <i class="fa-solid fa-location-dot"></i>
+        <div>
+          <h3>Location</h3>
+          <p>Jamshedpur, Jharkhand, India</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal reveal-delay-1" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+        <span class="error-msg" id="nameError"></span>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        <span class="error-msg" id="emailError"></span>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your project or query..." required></textarea>
+        <span class="error-msg" id="messageError"></span>
+      </div>
+      <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+      <p class="form-success" id="formSuccess">Thanks! Your message has been prepared — your email app should open shortly.</p>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-note">&copy; 2026 Shushant Sourav. Built with HTML, CSS &amp; JS.</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/shushant-sourav-329259385/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:sushantprp@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

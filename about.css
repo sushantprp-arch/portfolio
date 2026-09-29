@@ -1,0 +1,81 @@
+/* ============================================================
+   ABOUT PAGE STYLES
+   ============================================================ */
+
+.about-main-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-photo { position: relative; text-align: center; }
+.about-photo img {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin: 0 auto;
+  box-shadow: var(--shadow-soft);
+  border: 6px solid #fff;
+}
+.about-photo-tag {
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.about-photo-tag i { color: var(--coral); }
+
+.about-bio p { color: var(--ink-soft); margin-bottom: 16px; }
+.about-bio strong { color: var(--ink); }
+
+.about-quick-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+.fact-chip {
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  display: flex; align-items: center; gap: 8px;
+}
+.fact-chip i { color: var(--primary); }
+
+/* Timeline */
+.timeline-section { background: var(--bg-alt); border-top: 1px solid var(--line); }
+.timeline { margin-top: 40px; position: relative; padding-left: 30px; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px; top: 6px; bottom: 6px;
+  width: 2px;
+  background: var(--gradient-main);
+  opacity: 0.35;
+}
+.timeline-item { position: relative; padding-bottom: 40px; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-dot {
+  position: absolute;
+  left: -30px; top: 4px;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--gradient-main);
+  box-shadow: 0 0 0 4px var(--bg-alt), 0 0 0 6px var(--line);
+}
+.timeline-content h3 { font-size: 1.1rem; margin: 8px 0 8px; }
+.timeline-content p { color: var(--ink-soft); margin: 0; max-width: 620px; }
+
+@media (max-width: 860px) {
+  .about-main-grid { grid-template-columns: 1fr; }
+  .about-photo { order: -1; }
+}

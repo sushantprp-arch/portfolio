@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects | Shushant Sourav</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="bracket">&lt;</span>Shushant<span class="tag">.dev</span><span class="bracket">/&gt;</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">projects/</p>
+    <h1>Things I've built</h1>
+    <p>A mix of practice builds and a hackathon project — each one taught me something new.</p>
+  </div>
+</section>
+
+<section class="projects-main tight">
+  <div class="container">
+
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="frontend">Front-End</button>
+      <button class="filter-btn" data-filter="hackathon">Hackathon</button>
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project-card reveal" data-category="frontend">
+        <div class="project-img-wrap">
+          <img src="10.webp" alt="Web Wizard movie website screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Web Wizard — Movie Showcase</h3>
+          <p>A front-end practice project: a dummy movie browsing webpage with cards, ratings and a clean responsive layout.</p>
+          <div class="project-tags">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1" data-category="frontend">
+        <div class="project-img-wrap">
+          <img src="11.png" alt="Restaurant website screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Restaurant Website</h3>
+          <p>A responsive restaurant site with a menu showcase, gallery and contact section, built to practice layout &amp; UI design.</p>
+          <div class="project-tags">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2" data-category="frontend">
+        <div class="project-img-wrap">
+          <img src="12.jpg" alt="Tourism website screenshot" />
+        </div>
+        <div class="project-body">
+          <h3>Tourism Website</h3>
+          <p>A destination-discovery site highlighting places to visit, with an image gallery and a clean, colorful design.</p>
+          <div class="project-tags">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3" data-category="hackathon">
+        <div class="project-img-wrap">
+          <img src="14.jpg" alt="Ocean Hazard Alert project screenshot" />
+          <span class="project-badge">SIH 2025</span>
+        </div>
+        <div class="project-body">
+          <h3>Ocean Hazard Alert</h3>
+          <p>Built for Smart India Hackathon 2025 — a web platform concept to alert coastal communities about ocean-related hazards in near real time.</p>
+          <div class="project-tags">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Python</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="no-results" style="display:none;">No projects in this category yet.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-note">&copy; 2026 Shushant Sourav. Built with HTML, CSS &amp; JS.</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/shushant-sourav-329259385/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:sushantprp@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/projects.js"></script>
+</body>
+</html>
